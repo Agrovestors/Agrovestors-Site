@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  padding: 0.25rem 1rem; /* Reduce padding to further reduce height */
+  border-radius: 0 0 10px 10px; /* Curved corners at the bottom */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */;
+  width: 97.5%;
+}
+
+.logo a {
+  color: #000000; /* Black text color */
+  text-decoration: none;
+  font-size: 1.25rem; /* Reduce font size for a more compact look */
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-right: 20px;
+}
+
+.nav-links li a {
+  color: black; /* Black text color */
+  text-decoration: none;
+  font-size: 0.9rem; /* Reduce font size for a more compact look */
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white to match the navbar */
+  border: none;
+  border-radius: 12px;
+  color: black; /* Black text color */
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem; /* Reduce font size for a more compact look */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Additional styles for other elements */
+.centered-div {
+  background-color: #1DBF73;
+  width: 50%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the div horizontally */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; /* Center the text inside the div */
+  padding: 1rem; /* Add some padding for spacing */
+  color: white; /* Set text color to white */
+  border-radius: 7px;
+}
+
+/* Apply scrollbar styles to the whole body */
+body {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #ffffff #fff; /* scroll thumb color and track color */
+}
+
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+  border: 1px solid #4d4c4c; /* border around the scroll thumb */
+}

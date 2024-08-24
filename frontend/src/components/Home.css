@@ -1,0 +1,126 @@
+/* Home.css */
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+body {
+  font-family: "Poppins";
+}
+
+/* .home {
+  padding-top: 75px;
+} */
+
+.post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  margin-top: 0;
+}
+
+.post p {
+  margin-bottom: 10px;
+}
+
+.post-date {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.post-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the default text color */
+}
+
+/* Center the YouTube video */
+.youtube-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px; /* Add some space between the video and the blog posts */
+}
+
+.youtube-video iframe {
+  width: 100%; /* Make the video fill the container */
+  max-width: 800px; /* Set a maximum width for the video */
+  height: 400px; /* Set a fixed height for the video */
+  border-radius: 12px; /* Add curved edges */
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+.typewriter-container {
+  text-align: center;
+  margin: 20px 0;
+  margin-top: 60px;
+  font-size: 36px; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  color: black; /* Change the color to black */
+}
+
+.centered-div {
+  background-color: white;
+  text-align: center;
+  color: #1DBF73;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-date {
+  color: grey;
+  text-align: right;
+}
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 550px;
+  border-radius: 12px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+

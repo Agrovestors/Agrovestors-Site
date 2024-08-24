@@ -1,0 +1,51 @@
+/* EmployeePage.css */
+.employee-page {
+  text-align: center;
+}
+
+.employee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.employee-card {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.employee-card:hover {
+  transform: scale(1.05);
+}
+
+.employee-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.employee-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.color-title {
+  color: #1DBF73
+}
+
+.color-title-small {
+  color: #1DBF73;
+  /* font-size: 20px */
+
+}
