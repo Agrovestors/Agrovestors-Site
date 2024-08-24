@@ -1,8 +1,6 @@
-// server/models/Topic.js
-
 const mongoose = require('mongoose');
 
-const topicSchema = new mongoose.Schema({
+const TopicSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -11,8 +9,13 @@ const topicSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-}, { timestamps: true });
+  imageUrl: {
+    type: String,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
 
-const Topic = mongoose.model('Topic', topicSchema);
-
-module.exports = Topic;
+module.exports = mongoose.model('Topic', TopicSchema);
