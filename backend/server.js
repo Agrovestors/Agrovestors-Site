@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 
-// Import environment variables
+// Importing environment variables
 const { PORT, MONGO_URL } = process.env;
 
 const app = express();
