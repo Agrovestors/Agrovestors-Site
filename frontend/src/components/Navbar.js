@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-  const dropdownRef = useRef(null);
+  const aboutDropdownRef = useRef(null);
+  const teamDropdownRef = useRef(null);
 
   const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if (
+      (aboutDropdownRef.current && !aboutDropdownRef.current.contains(event.target)) ||
+      (teamDropdownRef.current && !teamDropdownRef.current.contains(event.target))
+    ) {
       // Optionally handle click outside for other purposes
     }
   };
@@ -30,19 +34,21 @@ const Navbar = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li>
-          <Link to="/mission">Mission</Link>
-        </li>
-        <li className="dropdown" ref={dropdownRef}>
+        <li className="dropdown" ref={aboutDropdownRef}>
           <button className="dropdown-button">About Us</button>
           <div className="dropdown-menu">
-            <Link to="/about/our-team">Our Team</Link>
-            <Link to="/about/mission">Our Mission</Link>
-            <Link to="/about/contact">Contact Us</Link>
+            <Link to="/AfTech">A.F Tech</Link>
+            <Link to="/mission">Vision and Mission</Link>
+            <Link to="/contact">Our Legacy</Link>
           </div>
         </li>
-        <li>
-          <Link to="/employees">Our Team</Link>
+        <li className="dropdown" ref={teamDropdownRef}>
+          <button className="dropdown-button">Agrovestors Team</button>
+          <div className="dropdown-menu">
+            <Link to="/employees">Meet Our Team</Link>
+            <Link to="/values">Our Cultural Values</Link>
+            <Link to="/philosophy">Our Philosophy</Link>
+          </div>
         </li>
       </ul>
     </nav>

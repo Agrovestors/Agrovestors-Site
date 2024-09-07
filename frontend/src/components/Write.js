@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './Write.css';
 
 const Write = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [image, setImage] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null); // New state for image preview
   const navigate = useNavigate();
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+    setImagePreview(URL.createObjectURL(file)); // Generate preview URL
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,6 +34,7 @@ const Write = () => {
       setTitle('');
       setBody('');
       setImage(null);
+      setImagePreview(null); // Clear the preview
       navigate('/');
     } catch (err) {
       console.error(err);
@@ -55,10 +64,18 @@ const Write = () => {
           <label>Image</label>
           <input
             type="file"
-            onChange={(e) => setImage(e.target.files[0])}
+            onChange={handleImageChange}
           />
         </div>
-        <button type="submit">Create Topic</button>
+
+        {/* Image Preview */}
+        {imagePreview && (
+          <div className="image-preview">
+            <img src={imagePreview} alt="Preview" />
+          </div>
+        )}
+
+        <button className="create-topic-button" type="submit">Create Topic</button>
       </form>
     </div>
   );

@@ -7,6 +7,7 @@ import Mission from './components/Mission';
 import About from './components/About';
 import EmployeePage from './components/EmployeePage';
 import TopicDetail from './components/TopicDetail'; // Import TopicDetail
+import AfTech from './components/AfTech'; // Update import to PascalCase
 
 const Contact = () => <h2>Contact Page</h2>;
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/employees" element={<EmployeePage />} />
+          <Route path="/AfTech" element={<AfTech />} /> {/* Update route to PascalCase */}
           <Route path="/topic/:id" element={<TopicDetail />} /> {/* Topic details route */}
         </Routes>
       </div>

@@ -11,13 +11,13 @@
   width: 97.5%;
   top: 0;
   z-index: 1000; /* Ensure the navbar is above other content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow at the bottom */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.16); /* Add box shadow at the bottom */
 }
 
 .logo a {
   color: #000000; /* Black text color */
   text-decoration: none;
-  font-size: 1.25rem; /* Reduce font size for a more compact look */
+  font-size: 1.4rem; /* Reduce font size for a more compact look */
   font-weight: bold;
 }
 
@@ -32,18 +32,46 @@
   position: relative; /* Important for dropdown positioning */
 }
 
+/* Normalize button and link styles */
+/* Normalize button and link styles */
 .nav-links li a,
 .dropdown-button {
-  color: black; /* Black text color */
+  color: black; /* Same text color */
   text-decoration: none;
-  font-size: 0.9rem; /* Reduce font size for a more compact look */
-  padding: 0.5rem 1rem; /* Add padding to match button size */
-  display: block; /* Make the links block-level to adjust padding */
+  font-size: 0.9rem; /* Same font size */
+  padding: 0.5rem 1rem; /* Same padding */
+  display: inline-block; /* Ensure they are inline-block */
+  vertical-align: middle; /* Align them vertically */
+  line-height: 1.5; /* Same line-height */
+  font-weight: 400; /* Normalize font weight */
+  font-family: inherit; /* Ensure same font family */
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Ensures both have pointer cursor */
+  box-sizing: border-box; /* Uniform box-sizing */
 }
+
+/* Specific button styling */
+.dropdown-button {
+  font-family: inherit; /* Inherit font-family to match links */
+  font-weight: 400; /* Ensure font weight matches */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu a {
+  padding: 0.75rem 1.25rem; /* Ensure consistent padding */
+  color: black; /* Match text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 0.9rem; /* Same font size */
+  display: block; /* Block-level links in the dropdown */
+  font-family: inherit; /* Inherit the font family */
+  font-weight: 400; /* Ensure font weight matches */
+}
+
 
 /* Navbar link hover effect */
 .nav-links li:hover {
-  background-color: rgba(255, 255, 255, 0.7); /* Light hover effect */
+  background-color: #b4b4b4; /* Light hover effect */
 }
 
 /* Dropdown */

@@ -1,0 +1,109 @@
+/* General form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Form heading */
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+  }
+  
+  /* Form field labels */
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Form input and textarea styles */
+  input[type="text"],
+  textarea,
+  input[type="file"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  /* Focus state for inputs */
+  input[type="text"]:focus,
+  textarea:focus,
+  input[type="file"]:focus {
+    border-color: #3b82f6; /* Blue border on focus */
+    outline: none;
+  }
+  
+  /* Textarea specific styling */
+  textarea {
+    resize: vertical; /* Only allow vertical resizing */
+    height: 150px; /* Default height */
+  }
+  
+  /* Button styles specifically for create topic */
+  .create-topic-button {
+    padding: 12px 20px;
+    background-color: #3b82f6; /* Blue background */
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  /* Button hover effect */
+  .create-topic-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  /* Button focus effect */
+  .create-topic-button:focus {
+    outline: none;
+    background-color: #1e40af; /* Even darker blue when focused */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    form {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    textarea {
+      font-size: 0.9rem;
+    }
+  
+    .create-topic-button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Image preview */
+.image-preview {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
