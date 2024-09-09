@@ -1,0 +1,58 @@
+/* CulturalValues.css */
+
+.cultural-values-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cultural-values-container h2 {
+  font-size: 2rem;
+  color: #4CAF50; /* Adjust the color if needed */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.values-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values-list li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 15px;
+  border-left: 5px solid #4CAF50; /* Green border for a polished look */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.values-list li strong {
+  color: #333;
+}
+
+.values-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cultural-values-container {
+    padding: 15px;
+  }
+
+  .cultural-values-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .values-list li {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

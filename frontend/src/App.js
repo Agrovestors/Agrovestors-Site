@@ -8,6 +8,7 @@ import About from './components/About';
 import EmployeePage from './components/EmployeePage';
 import TopicDetail from './components/TopicDetail'; // Import TopicDetail
 import AfTech from './components/AfTech'; // Update import to PascalCase
+import Values from './components/Values'; // Correct import path and name
 
 const Contact = () => <h2>Contact Page</h2>;
 
@@ -23,8 +24,9 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/employees" element={<EmployeePage />} />
-          <Route path="/AfTech" element={<AfTech />} /> {/* Update route to PascalCase */}
-          <Route path="/topic/:id" element={<TopicDetail />} /> {/* Topic details route */}
+          <Route path="/AfTech" element={<AfTech />} /> {/* Route for AfTech */}
+          <Route path="/Values" element={<Values />} /> {/* Route for Values */}
+          <Route path="/topic/:id" element={<TopicDetail />} /> {/* Route for TopicDetail */}
         </Routes>
       </div>
     </Router>

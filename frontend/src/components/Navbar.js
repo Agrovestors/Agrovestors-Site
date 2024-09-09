@@ -39,14 +39,14 @@ const Navbar = () => {
           <div className="dropdown-menu">
             <Link to="/AfTech">A.F Tech</Link>
             <Link to="/mission">Vision and Mission</Link>
-            <Link to="/contact">Our Legacy</Link>
+            <Link to="/legacy">Our Legacy</Link>
           </div>
         </li>
         <li className="dropdown" ref={teamDropdownRef}>
           <button className="dropdown-button">Agrovestors Team</button>
           <div className="dropdown-menu">
             <Link to="/employees">Meet Our Team</Link>
-            <Link to="/values">Our Cultural Values</Link>
+            <Link to="/Values">Our Cultural Values</Link>
             <Link to="/philosophy">Our Philosophy</Link>
           </div>
         </li>
