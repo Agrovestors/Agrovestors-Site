@@ -31,8 +31,10 @@ const AfTech = () => {
           <p>
             This is the dream of Agrovestors Farm-Tech”
           </p>
-          <h3>Mr. Stephen Onyewuenyi</h3>
-          <h3 className="ceo-title">CEO Agrovestors</h3>
+          <p>
+            <strong>Mr. Stephen Onyewuenyi</strong><br />
+           CEO, Agrovestors
+            </p>
         </div>
       </div>
     </div>

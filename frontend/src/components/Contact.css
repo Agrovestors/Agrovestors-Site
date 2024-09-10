@@ -1,0 +1,91 @@
+/* src/components/Contact.css */
+.contact-container {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-details h4 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -4,7 +4,7 @@ import './Values.css'; // Adjust CSS filename if needed
 const Values = () => {
   return (
     <div className="cultural-values-container">
-      <h2>b. Our Cultural Values</h2>
+      <h2>Our Cultural Values</h2>
       
       <ul className="values-list">
         <li>
